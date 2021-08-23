@@ -23,6 +23,9 @@
     height: 400px;
     max-width: 100%;
 }
+.infos{
+    margin-top: 40px;
+}
 .infos h1{
     margin: 0 auto;
     text-transform: uppercase;
@@ -30,9 +33,11 @@
     letter-spacing:  15px;
 }
 .infos p {
-    margin: 20px;
+    margin: 18px;
     color: hsl(0, 36%, 70%);
     font-size: 16px;
+    line-height: 1.5em;
+    
 }
 span{
     color:hsl(0, 36%, 70%);
@@ -66,4 +71,10 @@ button:hover{
     background-image: url(images/icon-arrow.svg), linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
 }
 
+@media (min-width: 378px) {
+    img{
+        object-fit:cover;
+        width: 100%;
+    }
+}
 
