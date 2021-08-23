@@ -71,9 +71,8 @@ button:hover{
     background-image: url(images/icon-arrow.svg), linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
 }
 
-@media (max-width: 2000px) {
+@media screen and (max-width: 2000px) {
     img{
-        object-fit:cover;
         width: 100%;
     }
 }
