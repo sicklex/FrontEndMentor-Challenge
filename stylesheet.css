@@ -52,7 +52,7 @@ input::placeholder{
 button{
     width: 18%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     right: 10px;
     border-radius:30px;
     border: none;
