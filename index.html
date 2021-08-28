@@ -18,44 +18,41 @@
 </head>
 <body>
 <main class="main-container">
-  <section class="img-section">
-    <div>
-      <img class="img-logo"src="images/logo.svg" alt="Logo Base Apparel">
-    </div>
-    <div class="container-img">
-      <img src="images/hero-mobile.jpg" alt="Model" class="img">
-    </div>
-  </section>
-
-
   <section class="info-border">
   <div class="info-container">
+    <div class="img-section">
+      <div>
+        <img class="img-logo"src="images/logo.svg" alt="Logo Base Apparel">
+      </div>
+      <div class="container-img mobile-hero">
+        <img src="images/hero-mobile.jpg" alt="Model" class="img-mobile">
+      </div>
+    </div>
     <div class="infos">
-      <h1><span>We're</span> coming soon</h1>
+      <h1> <span>We're</span> coming soon</h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
           <div class="container-form">
             <form  action="" method="GET">
             <label for="email"></label>
-            <input type="email" placeholder="Email Address" name="email" id="email" required>
-            <button type="submit"></button>
-            <p id="invalid-email"></p>  
+            <input type="text" placeholder="Email Address" name="email" id="email-el">
+            <button id="submit-button"type="submit"></button> 
+            <p class="error" id="error-text"></p>
           </div>
       </div>
     </div>
   </div>
   </section>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Claydson</a>.
-    </p>
-  </footer>
-  
+  <div class="desk-hero">
+    <img src="images/hero-desktop.jpg" alt="Model photo" class="img-desktop">
+  </div>
 </main>
-
-
-
- 
+<footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Claydson</a>.
+  </p>
+</footer>
+<script src="index.js"></script>
 </body>
 </html>
