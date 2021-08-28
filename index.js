@@ -8,8 +8,6 @@ const emailEl = document.getElementById("email-el")
 const submitButton = document.getElementById("submit-button")
 const errorText = document.getElementById("error-text")
 
-
-
 submitButton.addEventListener("click", function (e){
     e.preventDefault()
     let email = emailEl.value
@@ -19,6 +17,7 @@ submitButton.addEventListener("click", function (e){
     else if (!validateEmail(email)) {
         emailEl.className = "email"
         errorText.textContent = "Please provide a valid email"
+        emailEl.style.borderColor = "red"
     }else{
         errorText.textContent = ""
     }
@@ -28,6 +27,7 @@ submitButton.addEventListener("click", function (e){
 emailEl.addEventListener("click", function(){
     errorText.textContent = ""
     emailEl.className = ""
+    emailEl.style.borderColor = ""
 })
 
 

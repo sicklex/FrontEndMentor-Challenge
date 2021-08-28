@@ -8,7 +8,6 @@ body{
     height:100vh;
     max-width:1440px;
     margin:0 auto;
-    margin-top:60px;
 }
 .desk-hero{
     display: none;
@@ -37,19 +36,28 @@ body{
     font-size: 2.0em;
     letter-spacing:  15px;
 }
+.infos p{
+    color: hsl(0, 36%, 70%);
+}
 .infos span{
     color: hsl(0, 36%, 70%);
     font-size: 1em;
     line-height: 1.5em;
 }
 
+.email{
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position:19rem;
+}
 
-input[type="text"]{
-    height:49px;
+#email-el{
+    min-height:49px;
     border:1px solid hsl(0, 36%, 70%);
     padding-left:20px;
     border-radius:40px;
     font-size: 16px;
+    background-color: hsl(0, 36%, 95%);
 }
 input:focus{
     outline: none;
@@ -78,13 +86,6 @@ button:hover{
     cursor: pointer;
     background-image: url(images/icon-arrow.svg), linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
 }
-.email{
-    background-image: url(images/icon-error.svg);
-    background-repeat: no-repeat;
-    background-position:19rem;
-    border: 2px solid red; 
-}
-
 
 
 @media (max-width: 766px) {
@@ -93,6 +94,32 @@ button:hover{
     }
     main{
         height: 100vh;
+    }
+    .infos{
+        margin-left: 20px;
+    }
+    .infos p{
+        width: 90%;
+        margin:20px 0;
+    }
+    .container-form{
+        margin-top: 40px;
+        
+    }
+    input[type="text"]{
+        width:80%; 
+        margin:0;
+        position:relative;
+        right: 30px;
+    }
+    button{
+        position:absolute;
+        right: 50px;
+        width: 20%;
+    }
+    .container-form .error{
+        margin:10px;
+        text-align:left;
     }
 }
 @media (min-width: 767px){
@@ -147,7 +174,7 @@ button:hover{
     }
     .infos p {
         width: 90%;
-        margin:0;
+        margin:20px 0;
         line-height: 1.5em;
     }
     .main-container{
@@ -158,7 +185,7 @@ button:hover{
     }
     button{
         position:relative;
-        top: 21px;
+        top: -5px;
         right:60px;
     }
 }
